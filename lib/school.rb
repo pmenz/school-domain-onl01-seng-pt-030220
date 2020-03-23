@@ -1,4 +1,9 @@
 
+<<<<<<< HEAD
+=======
+required.pry
+
+>>>>>>> 09d329e4db2eb1e60f5d01861aafc2a6df566c50
 class School 
   
   attr_accessor :roster, :name
@@ -11,14 +16,22 @@ class School
   def add_student(name, grade)
     if @roster[grade]==nil
     @roster[grade] = []
+<<<<<<< HEAD
     end
     if  name.instance_of? Array
       
     @roster[grade] += name
+=======
+  end
+    if name.instance_of? Array
+      
+      @roster[grade] += name
+>>>>>>> 09d329e4db2eb1e60f5d01861aafc2a6df566c50
     end
     @roster[grade]<< name
   end
   
+<<<<<<< HEAD
   def grade(grade)
     @roster[grade]
   end
@@ -34,5 +47,10 @@ class School
 end
 end
 
+=======
+  
+end
+  binding.pry
+>>>>>>> 09d329e4db2eb1e60f5d01861aafc2a6df566c50
   
   
